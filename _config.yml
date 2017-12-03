@@ -1,8 +1,8 @@
 # Site settings
 title: Hunter Dubel
 description: Software Engineer
-#baseurl: "/" # the subpath of your site, e.g. /blog
-#url: "http://hunterdubel.xyz" # the base hostname & protocol for your site e.g. http://willianjusten.com.br
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://hunterdubel.xyz" # the base hostname & protocol for your site e.g. http://willianjusten.com.br
 
 # User settings
 username: Hunter Dubel
