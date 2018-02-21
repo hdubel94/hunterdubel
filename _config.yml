@@ -1,13 +1,13 @@
 # Site settings
 title: Hunter Dubel
-description: Software Engineer
+description: Software & Computer Engineer
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://hunterdubel.xyz" # the base hostname & protocol for your site e.g. http://willianjusten.com.br
 
 # User settings
 username: Hunter Dubel
-user_description: Studying for Masters of Science in Software Engineering at Monmouth University. Graduated from The College of New Jersey in '17 with a Bachelors of Engineering in Computer Engineering.
-user_title: Software Engineer
+user_description: Studying for a Masters of Science in Software Engineering at Monmouth University. Graduated from The College of New Jersey in '17 with a Bachelors of Engineering in Computer Engineering.
+user_title: Software & Computer Engineer
 email: hunterdubel@ieee.org
 twitter_username: hdubel
 github_username:  hdubel94
