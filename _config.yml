@@ -6,16 +6,19 @@ url: "http://hunterdubel.xyz" # the base hostname & protocol for your site e.g. 
 
 # User settings
 username: Hunter Dubel
-user_description: I'm always looking for new technologies to learn or ways to master my current skill set. Collector of technology with an interest in 3D printers, micro controllers, drones, and game development.
-user_title: DevOps Engineer | Software Engineer | Computer Engineer
+user_description:
+  I'm a DevOps Engineer with a passion for software development and computer engineering. I work with both Amazon Web Services and Microsoft with a focus on automation and infrastructure as code.
+  I am the project manager and maintain the infrastructure and cloud presence for The Indie Accord, a group of hobbiest game developers.
+  I'm always looking for new technologies to learn or ways to master my current skill set. Collector of technology with an interest in 3D printers, micro controllers, drones, and game development.
+user_title: Cloud | DevOps | Software | Computer Engineer
 email: hunterdubel@ieee.org
 twitter_username: hdubel
-github_username:  hdubel94
+github_username: hdubel94
 linkedin_username: hunter-dubel
-gplus_username:  HunterDubel
+gplus_username: HunterDubel
 
 # Google-analytics
 google-analytics:
   id: "UA-71163561-1"
 
-exclude: ['package.json', 'src' , 'node_modules']
+exclude: ["package.json", "src", "node_modules"]
