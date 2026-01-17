@@ -1,4 +1,4 @@
- <div class="user-details">
+<div class="user-details">
   <h1>About Me</h1>
   <p> {{site.user_description}} </p>
   <img 
@@ -26,35 +26,53 @@
     width="100px" 
   />
 
-  <h2> Experience </h2>
-  <a href="https://www.spartasystems.com/">
-    <img alt="Sparta Systems" title="Sparta Systems" height="150px" src="{{ "/assets/img/Sparta.png" | prepend: site.baseurl }}" />
-  </a>
-  <a href="https://www.icims.com/">
-    <img alt="iCIMS" title="iCIMS" height="150px" src="{{ "/assets/img/iCims.png" | prepend: site.baseurl }}" />
-  </a>
-  <a href="https://www.protiviti.com/US-en">
-    <img alt="Protiviti" title="Protiviti" height="150px" src="{{ "/assets/img/protiviti.png" | prepend: site.baseurl }}" />
-  </a>
-  <p>DevOps engineer with experience in both the AWS and Azure ecosystems as well as CI/CD. Familiar with automation and infrastructure tools such as Terraform, Jenkins, Docker, and Ansible.</p>
+  <h2>Experience</h2>
+    <div class="experience-logos" style="display: flex; justify-content: center; align-items: center; flex-wrap: wrap;">
+    <a href="https://www.spartasystems.com/" style="padding: 0 10px;">
+      <img 
+        alt="Sparta Systems" 
+        title="Sparta Systems" 
+        height="120px" 
+        src="{{ "/assets/img/logo/sparta.png" | prepend: site.baseurl }}" 
+      />
+    </a>
+    <a href="https://www.icims.com/" style="padding: 0 10px;">
+      <img 
+        alt="icims" 
+        title="icims" 
+        height="50px" 
+        src="{{ "/assets/img/logo/icims.svg" | prepend: site.baseurl }}" 
+      />
+    </a>
+    <a href="https://www.protiviti.com/US-en" style="padding: 0 10px;">
+      <img 
+        alt="Protiviti" 
+        title="Protiviti" 
+        height="75px" 
+        src="{{ "/assets/img/logo/protiviti.png" | prepend: site.baseurl }}" 
+      />
+    </a>
+    <a href="https://incode.com" style="padding: 0 10px;">
+      <img 
+        alt="Incode" 
+        title="Incode" 
+        height="50px" 
+        src="{{ "/assets/img/logo/incode.svg" | prepend: site.baseurl }}" 
+      />
+    </a>
+  </div>
+  <p>DevOps engineer with experience in both the AWS and Azure ecosystems. Familiar with automation, infrastructure, and CI\CD tools such as Terraform, Jenkins, Docker, Ansible, and Kubernetes.</p>
   <h3> Certifications & Badges</h3>
-<!-- Microsoft -->
-  <a href="https://learn.microsoft.com/en-us/credentials/browse/">
-    <img alt="Microsoft AI-900" title="Microsoft AI-900" height="100px" src="{{ "https://images.credly.com/images/4136ced8-75d5-4afb-8677-40b6236e2672/twitter_thumb_201604_azure-ai-fundamentals-600x600.png" }}" />
-  <a href="https://docs.microsoft.com/en-us/learn/certifications/exams/az-900?wt.mc_id=learningredirect_certs-web-wwl">
-      <img alt="Azure Fundamentals Certified" title="Azure Fundamentals" height="100px" src="{{ "/assets/img/azure-fundamentals-600x600.png" | prepend: site.baseurl }}" />
-  </a>
-  <a href="https://learn.microsoft.com/en-us/credentials/browse/">
-    <img alt="Microsoft 365 Certified" title="Microsoft 365 Certified" height="100px" src="{{ "https://images.credly.com/size/680x680/images/0c6d9839-f468-4adc-987d-5cfae4a9ee67/image.png" }}" />
 <!-- AWS -->
   <a href="https://aws.amazon.com/education/awseducate/">
-    <img alt="AWS DevOps Professional" title="AWS DevOps Professional" height="100px" src="{{ "https://images.credly.com/size/680x680/images/bd31ef42-d460-493e-8503-39592aaf0458/image.png" }}" />
+    <img alt="AWS DevOps Professional" title="AWS DevOps Professional" height="100px" src="{{ "/assets/img/cert/aws_dop.png" | prepend: site.baseurl }}" />
   </a>
   <a href="https://aws.amazon.com/education/awseducate/">
-    <img alt="AWS Solutions Architect Associate" title="AWS Solutions Architect Associate" height="100px" src="{{ "https://images.credly.com/size/680x680/images/0e284c3f-5164-4b21-8660-0d84737941bc/image.png" }}" />
+    <img alt="AWS Solutions Architect Associate" title="AWS Solutions Architect Associate" height="100px" src="{{ "assets/img/cert/aws_saa.png" | prepend: site.baseurl }}" />
   </a>
   <a href="https://aws.amazon.com/education/awseducate/">
-    <img alt="AWS SysOps Associate" title="AWS Certified SysOps Associate" height="100px" src="{{ "https://images.credly.com/size/680x680/images/f0d3fbb9-bfa7-4017-9989-7bde8eaf42b1/image.png" }}" />
+    <img alt="AWS SysOps Associate" title="AWS Certified SysOps Associate" height="100px" src="{{ "/assets/img/cert/aws_soa.png" | prepend: site.baseurl }}" />
+  </a>
   <a href="https://aws.amazon.com/education/awseducate/">
     <img alt="AWS Software Engineer Badge" title="AWS Software Engineer Badge " height="100px" src="{{ "https://www.awseducate.com/student/resource/AWSEd_Resource/img/digitalcredentials/sw-eng.png" }}" />
   </a>
@@ -64,74 +82,103 @@
   <a href="https://aws.amazon.com/education/awseducate/">
     <img alt="AWS Startup Badge" title="AWS Startup Badge" height="100px" src="{{ "https://www.awseducate.com/student/resource/AWSEd_Resource/img/startUps.jpeg" }}" />
   </a>
+  <br>
+<!-- Microsoft -->
+  <a href="https://learn.microsoft.com/en-us/credentials/browse/">
+    <img alt="Microsoft AI-900" title="Microsoft AI-900" height="100px" src="{{ "assets/img/cert/az_ai_900.png" | prepend: site.baseurl }}" />
+  </a>
+  <a href="https://docs.microsoft.com/en-us/learn/certifications/exams/az-900?wt.mc_id=learningredirect_certs-web-wwl">
+      <img alt="Azure Fundamentals Certified" title="Azure Fundamentals" height="100px" src="{{ "/assets/img/cert/az_900.png" | prepend: site.baseurl }}" />
+  </a>
+  <a href="https://learn.microsoft.com/en-us/credentials/browse/">
+    <img alt="Microsoft 365 Certified" title="Microsoft 365 Certified" height="100px" src="{{ "assets/img/cert/ms_fundamentals.png" | prepend: site.baseurl }}" />
+  </a>
+
 <!-- Terraform -->
   <a href="https://aws.amazon.com/education/awseducate/">
-    <img alt="Terraform Certified Associate 003" title="Terraform Certified Associate 003" height="100px" src="{{ "https://images.credly.com/size/680x680/images/85b9cfc4-257a-4742-878c-4f7ab4a2631b/image.png" }}" />
+    <img alt="Terraform Certified Associate 003" title="Terraform Certified Associate 003" height="100px" src="{{ "/assets/img/cert/terraform_associate_003.png" | prepend: site.baseurl }}" />
   </a>
   <a href="https://aws.amazon.com/education/awseducate/">
-    <img alt="Terraform Certified Associate 002" title="Terraform Certified Associate 002" height="100px" src="{{ "https://images.credly.com/size/680x680/images/99289602-861e-4929-8277-773e63a2fa6f/image.png" }}" />
+    <img alt="Terraform Certified Associate 002" title="Terraform Certified Associate 002" height="100px" src="{{ "/assets/img/cert/terraform_associate_002.png" | prepend: site.baseurl }}" />
  <!-- SAFE -->
     <a href="https://www.scaledagile.com/enterprise-solutions/what-is-safe/">
-    <img alt="Certified SAFe 4 Scrum Master" title="SAFe 4 Scrum Master" height="100px" src="{{ "/assets/img/cert_mark_SSM_large_300px.png" | prepend: site.baseurl }}" />
+    <img alt="Certified SAFe 4 Scrum Master" title="SAFe 4 Scrum Master" height="100px" src="{{ "/assets/img/cert/safe_4.png" | prepend: site.baseurl }}" />
   </a>
   <a href="https://www.scaledagile.com/enterprise-solutions/what-is-safe/">
-    <img alt="Certified SAFe 5 Scrum Master" title="SAFe 5 Scrum Master" height="100px" src="{{ "/assets/img/cert_mark_SSM_badge_large_300px.png" | prepend: site.baseurl }}" />
+    <img alt="Certified SAFe 5 Scrum Master" title="SAFe 5 Scrum Master" height="100px" src="{{ "/assets/img/cert/safe_5.png" | prepend: site.baseurl }}" />
+  </a>
+  <a href="https://www.scaledagile.com/enterprise-solutions/what-is-safe/">
+    <img alt="Certified SAFe 6 Scrum Master" title="SAFe 6 Scrum Master" height="100px" src="{{ "/assets/img/cert/safe_6.png" | prepend: site.baseurl }}" />
   </a>
 
-</div>
-  <div class="user">
-    <div class="tech">
-      <h2>Tools</h2>
-      <i alt="AzureDevOps" title="Azure DevOps" class="devicon-azuredevops-plain colored"></i>
-      <i alt="Docker" title="Docker" class="devicon-docker-plain-wordmark colored"></i>
-      <i alt="Git" title="Git" class="devicon-git-plain colored"></i>
-      <i alt="Slack" title="Slack" class="devicon-slack-plain-wordmark colored"></i>
-      <i alt="Jira" title="Jira" class="devicon-jira-plain-wordmark colored"></i>
-      <i alt="Confluence" title="Confluence" class="devicon-confluence-plain colored"></i>
-      <i alt="Bitbucket" title="Bitbucket" class="devicon-bitbucket-plain-wordmark colored"></i>
-      <img 
-      src="https://logos-download.com/wp-content/uploads/2016/10/Ansible_logo-700x700.png" 
-      alt="Ansible"
-      height="76px"
-      width="76px" 
-      />
-      <img 
-      src="https://www.jenkins.io/images/logos/jenkins/jenkins.png" 
-      alt="Jenkins"
-      height="100px"
-      width="76px" 
-      />
-      <img 
-        src="https://icongr.am/material/unity.svg" 
-        alt="Unity Engine"
-        height="87px"
-        width="100px" 
-      />
-
+  <h3>Skills & Technologies</h3>
+  <div class="skills-grid">
+    <!-- Tools -->
+    <div class="skills-column">
+      <h4 class="skills-title">Tools</h4>
+      <div class="skills-icons skills-icons--tools">
+        <i alt="Terraform" title="Terraform" class="devicon-terraform-plain-wordmark colored" style="font-size: 60px;"></i>
+        <i alt="Kubernetes" title="Kubernetes" class="devicon-kubernetes-plain-wordmark colored" style="font-size: 60px;"></i>
+        <i alt="Docker" title="Docker" class="devicon-docker-plain-wordmark colored" style="font-size: 60px;"></i>
+        <i alt="Git" title="Git" class="devicon-git-plain colored" style="font-size: 60px;"></i>
+        <i alt="Slack" title="Slack" class="devicon-slack-plain-wordmark colored" style="font-size: 60px;"></i>
+        <i alt="Jira" title="Jira" class="devicon-jira-plain-wordmark colored" style="font-size: 60px;"></i>
+        <i alt="Confluence" title="Confluence" class="devicon-confluence-plain colored" style="font-size: 60px;"></i>
+        <i alt="Bitbucket" title="Bitbucket" class="devicon-bitbucket-plain-wordmark colored" style="font-size: 60px;"></i>
+        <i alt="AzureDevOps" title="Azure DevOps" class="devicon-azuredevops-plain colored" style="font-size: 60px;"></i>
+        <img 
+        src="https://logos-download.com/wp-content/uploads/2016/10/Ansible_logo-700x700.png" 
+        alt="Ansible"
+        height="60px"
+        width="60px"
+        style="object-fit: contain;"
+        />
+        <img 
+        src="https://www.jenkins.io/images/logos/jenkins/jenkins.png" 
+        alt="Jenkins"
+        height="60px"
+        width="60px"
+        style="object-fit: contain;"
+        />
+        <img 
+          src="https://icongr.am/material/unity.svg" 
+          alt="Unity Engine"
+          height="60px"
+          width="60px"
+          style="object-fit: contain;"
+        />
+      </div>
     </div>
-    <div class="tech">
-      <h2>Code</h2>
-      <i alt="Python" title="Python" class="devicon-python-plain-wordmark colored"></i>
-      <i alt="JavaScript" title="JavaScript" class="devicon-javascript-plain"></i>
-      <i alt="Nodejs" title="Nodejs" class="devicon-nodejs-plain-wordmark colored"></i>
-      <i alt="ReactJS" title="ReactJS" class="devicon-react-original-wordmark colored"></i>
-      <i alt="Express" title="Express" class="devicon-express-original colored"></i>
-      <i alt="MySQL" title="MySQL" class="devicon-mysql-plain-wordmark colored"></i>
-      <i alt="PostgreSQL" title="PostgreSQL" class="devicon-postgresql-plain-wordmark colored"></i>
-      <i alt="MongoDB" title="MongoDB" class="devicon-mongodb-plain-wordmark colored"></i>
-      <i alt="Java" title="Java" class="devicon-java-plain-wordmark colored"></i>
-      <i alt="C" title="C" class="devicon-c-plain colored"></i>
-      <i alt="C++" title="C++" class="devicon-cplusplus-plain colored"></i>
-      <i alt="C#" title="C#" class="devicon-csharp-plain colored"></i>
+    <!-- Code -->
+    <div class="skills-column">
+      <h4 class="skills-title">Code</h4>
+      <div class="skills-icons">
+        <i alt="Python" title="Python" class="devicon-python-plain-wordmark colored" style="font-size: 60px;"></i>
+        <i alt="JavaScript" title="JavaScript" class="devicon-javascript-plain" style="font-size: 60px;"></i>
+        <i alt="Nodejs" title="Nodejs" class="devicon-nodejs-plain-wordmark colored" style="font-size: 60px;"></i>
+        <i alt="ReactJS" title="ReactJS" class="devicon-react-original-wordmark colored" style="font-size: 60px;"></i>
+        <i alt="Express" title="Express" class="devicon-express-original colored" style="font-size: 60px;"></i>
+        <i alt="MySQL" title="MySQL" class="devicon-mysql-plain-wordmark colored" style="font-size: 60px;"></i>
+        <i alt="PostgreSQL" title="PostgreSQL" class="devicon-postgresql-plain-wordmark colored" style="font-size: 60px;"></i>
+        <i alt="MongoDB" title="MongoDB" class="devicon-mongodb-plain-wordmark colored" style="font-size: 60px;"></i>
+        <i alt="Java" title="Java" class="devicon-java-plain-wordmark colored" style="font-size: 60px;"></i>
+        <i alt="C" title="C" class="devicon-c-plain colored" style="font-size: 60px;"></i>
+        <i alt="C++" title="C++" class="devicon-cplusplus-plain colored" style="font-size: 60px;"></i>
+        <i alt="C#" title="C#" class="devicon-csharp-plain colored" style="font-size: 60px;"></i>
+      </div>
     </div>
-    <div class="tech">
-      <h2>Systems</h2>
-      <i alt="AWS" title="AWS" class="devicon-amazonwebservices-plain-wordmark colored"></i>
-      <i alt="Azure" title="Azure" class="devicon-azure-plain-wordmark colored"></i>
-      <i alt="Linux" title="Linux" class="devicon-linux-plain colored"></i>
-      <i alt="Redhat/CentOS" title="Redhat/CentOS" class="devicon-redhat-plain-wordmark colored"></i>
-      <i alt="Windows" title="Windows" class="devicon-windows11-original colored"></i>
-      <i alt="MacOS" title="MacOS" class="devicon-apple-original colored"></i>
-      <i alt="Raspberry Pi" title="Raspberry Pi" class="devicon-raspberrypi-plain colored"></i>
+    <!-- Systems -->
+    <div class="skills-column">
+      <h4 class="skills-title">Systems</h4>
+      <div class="skills-icons">
+        <i alt="AWS" title="AWS" class="devicon-amazonwebservices-plain-wordmark colored" style="font-size: 60px;"></i>
+        <i alt="Azure" title="Azure" class="devicon-azure-plain-wordmark colored" style="font-size: 60px;"></i>
+        <i alt="Linux" title="Linux" class="devicon-linux-plain colored" style="font-size: 60px;"></i>
+        <i alt="Redhat/CentOS" title="Redhat/CentOS" class="devicon-redhat-plain-wordmark colored" style="font-size: 60px;"></i>
+        <i alt="Windows" title="Windows" class="devicon-windows11-original colored" style="font-size: 60px;"></i>
+        <i alt="MacOS" title="MacOS" class="devicon-apple-original colored" style="font-size: 60px;"></i>
+        <i alt="Raspberry Pi" title="Raspberry Pi" class="devicon-raspberrypi-plain colored" style="font-size: 60px;"></i>
+      </div>
     </div>
+  </div>
 </div>
